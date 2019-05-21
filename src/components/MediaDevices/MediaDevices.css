@@ -1,0 +1,15 @@
+.MediaDevices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border: 2px solid green;
+}
+
+.MediaDevices > * {
+    margin: 5px;
+}
+
+.Video {
+    border: 2px solid greenyellow;
+}
