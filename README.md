@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/leandrogaspar/webrtc-study.svg?branch=master)](https://travis-ci.com/leandrogaspar/webrtc-study)
+
 # WebRTC Study
 
 Simple APP for study WebRTC
