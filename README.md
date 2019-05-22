@@ -3,7 +3,7 @@
 # WebRTC Study
 >Simple APP for study WebRTC
 
-[Play with it!](https://leandrogaspar.github.io/webrtc-stufy/)
+[Play with it!](https://leandrogaspar.github.io/webrtc-study/)
 
 ## Available Scripts
 
