@@ -13,9 +13,8 @@ function MediaDevices(props) {
         try {
             mediaStream = await navigator.mediaDevices.getUserMedia(mediaConstraint);
             videoRef.current.srcObject = mediaStream;
-            videoRef.current.play();
         } catch (e) {
-            console.log('Unable to capture video: ' + e);
+            alert('Unable to capture video: ' + e);
         }
     }
     
@@ -23,9 +22,8 @@ function MediaDevices(props) {
         try {
             mediaStream = await navigator.mediaDevices.getDisplayMedia(mediaConstraint);
             videoRef.current.srcObject = mediaStream;
-            videoRef.current.play();
         } catch (e) {
-            console.log('Unable to capture display: ' + e);
+            alert('Unable to capture display: ' + e);
         }
     }
 
@@ -35,13 +33,13 @@ function MediaDevices(props) {
                 mediaStream.getTracks().forEach(track => track.stop());
             }
         } catch (e) {
-            console.log('Unable to stop media stream: '+ e);
+            alert('Unable to stop media stream: '+ e);
         }
     }
 
     return <div className="MediaDevices">
         <h1>Media Devices Example!</h1>
-        <video ref={videoRef} width="640" height="320" className="Video"></video>
+        <video ref={videoRef} width="640" height="320" autoPlay className="Video"></video>
         <button onClick={onGetUserMedia}>getUserMedia</button>
         <button onClick={onGetDisplayMedia}>getDisplayMedia</button>
         <button onClick={onStop}>Stop</button>
